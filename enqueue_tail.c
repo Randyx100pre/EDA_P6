@@ -19,18 +19,14 @@ enum boolean enqueue_tail(struct nodo **h, struct nodo **t, int *ch, int *ct, *f
             if(*t==NULL){
                 (*h)=new;
                 *ch=0;
-
             }
             else{
                 (*t)->next =new;
                 new->prev =(*t);
-
             }
             (*t)=new;
             *ct +=1;
             return verdad;
         }
     }
-
-
 }
